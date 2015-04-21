@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/p1_status"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_1"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/p1_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_hp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/p1_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p1_status">
+
+        <Button
+            android:id="@+id/p1_add"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_hp"/>
+        <Button
+            android:id="@+id/p1_subtract"
+            android:layout_toRightOf="@+id/p1_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract_hp"/>
+
+        <Button
+            android:id="@+id/p1_add5"
+            android:layout_toRightOf="@+id/p1_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_5hp"/>
+
+        <Button
+            android:id="@+id/p1_subtract5"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/p1_add5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract_5hp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/p2_status"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/p1_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_2"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/p2_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_hp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/p2_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p2_status">
+
+        <Button
+            android:id="@+id/p2_add"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_hp"/>
+        <Button
+            android:id="@+id/p2_subtract"
+            android:layout_toRightOf="@+id/p2_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract_hp"/>
+
+        <Button
+            android:id="@+id/p2_add5"
+            android:layout_toRightOf="@+id/p2_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_5hp"/>
+
+        <Button
+            android:id="@+id/p2_subtract5"
+            android:layout_toRightOf="@+id/p2_add5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/subtract_5hp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/p3_status"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/p2_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player3"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_3"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/p3_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_hp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/p3_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p3_status">
+
+        <Button
+            android:id="@+id/p3_add"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_hp"/>
+        <Button
+            android:id="@+id/p3_subtract"
+            android:layout_toRightOf="@+id/p3_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract_hp"/>
+
+        <Button
+            android:id="@+id/p3_add5"
+            android:layout_toRightOf="@+id/p3_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_5hp"/>
+
+        <Button
+            android:id="@+id/p3_subtract5"
+            android:layout_toRightOf="@+id/p3_add5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract_5hp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/p4_status"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/p3_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player4"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_4"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/p4_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_hp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/p4_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p4_status">
+
+        <Button
+            android:id="@+id/p4_add"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_hp"/>
+        <Button
+            android:id="@+id/p4_subtract"
+            android:layout_toRightOf="@+id/p4_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract_hp"/>
+
+        <Button
+            android:id="@+id/p4_add5"
+            android:layout_toRightOf="@+id/p4_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_5hp"/>
+
+        <Button
+            android:id="@+id/p4_subtract5"
+            android:layout_toRightOf="@+id/p4_add5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract_5hp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

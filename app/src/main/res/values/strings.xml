@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LifeCounter</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="player_1">Player1: </string>
+    <string name="player_2">Player2: </string>
+    <string name="player_3">Player3: </string>
+    <string name="player_4">Player4: </string>
+
+    <string name="add_hp"> + </string>
+    <string name="add_5hp"> + 5 </string>
+    <string name="subtract_hp"> - </string>
+    <string name="subtract_5hp"> - 5 </string>
+
+    <string name="starting_hp"> 20 </string>
+</resources>
